@@ -1,5 +1,4 @@
 from flask import Flask,jsonify,request
-import jwt
 import os
 from PIL import Image
 from pytesseract import pytesseract
