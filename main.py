@@ -5,7 +5,7 @@ from pytesseract import pytesseract
 
 app = Flask(__name__)
 
-@app.route('/',methods=["POST"])
+@app.route('/image',methods=["POST"])
 def imageProcess():
     try:
         path_to_tesseract = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
