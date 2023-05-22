@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/image',methods=["POST"])
 def imageProcess():
     try:
-        path_to_tesseract = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+        path_to_tesseract = "Tesseract-OCR/tesseract.exe"
         image_file = request.files['image']
         temp_image_path = 'temp_image.png'
         image_file.save(temp_image_path)
