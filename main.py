@@ -8,7 +8,7 @@ app = Flask(__name__)
 def imageProcess():
     try:
         image_file = request.files['image']
-        temp_image_path = 'temp_image.png'
+        temp_image_path = image_file
         image_file.save(temp_image_path)
         img = Image.open(temp_image_path)
         text = pytesseract.image_to_string(img)
